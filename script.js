@@ -158,6 +158,17 @@ try {
   statNums.forEach(el => countObserver.observe(el));
 } catch (err) { console.warn('Stat counters unavailable', err); }
 
+/* ===== BACK TO TOP ===== */
+try {
+  const backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', () => {
+    backToTop.classList.toggle('show', window.scrollY > 600);
+  }, { passive: true });
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+} catch (err) { console.warn('Back to top unavailable', err); }
+
 /* ===== CONTACT FORM ===== */
 try {
   const form = document.getElementById('contactForm');
