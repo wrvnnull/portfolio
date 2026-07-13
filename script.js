@@ -172,15 +172,44 @@ try {
 /* ===== CONTACT FORM ===== */
 try {
   const form = document.getElementById('contactForm');
-  form.addEventListener('submit', (e) => {
+  const submitBtn = document.getElementById('submitBtn');
+  const btnLabel = submitBtn.querySelector('.btn-label');
+  const statusEl = document.getElementById('formStatus');
+
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const message = form.message.value.trim();
 
-    const subject = encodeURIComponent(`Portfolio contact from ${name}`);
-    const body = encodeURIComponent(`${message}\n\nFrom: ${name} (${email})`);
+    submitBtn.disabled = true;
+    btnLabel.textContent = 'Sending…';
+    statusEl.textContent = '';
+    statusEl.className = 'form-status';
 
-    window.location.href = `mailto:irvaaanfauzi@gmail.com?subject=${subject}&body=${body}`;
+    try {
+      const formData = new FormData(form);
+      const res = await fetch('https://formsubmit.co/ajax/irvaaanfauzi@gmail.com', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      });
+
+      if (!res.ok) throw new Error('Request failed');
+
+      btnLabel.textContent = 'Message sent';
+      statusEl.textContent = "Thanks! Your message is on its way, I'll get back to you soon.";
+      statusEl.className = 'form-status success';
+      form.reset();
+
+      setTimeout(() => {
+        btnLabel.textContent = 'Send message';
+        submitBtn.disabled = false;
+      }, 2500);
+
+    } catch (err) {
+      console.warn('Contact form submission failed', err);
+      btnLabel.textContent = 'Send message';
+      submitBtn.disabled = false;
+      statusEl.textContent = 'Something went wrong. Please email irvaaanfauzi@gmail.com directly.';
+      statusEl.className = 'form-status error';
+    }
   });
 } catch (err) { console.warn('Contact form unavailable', err); }
