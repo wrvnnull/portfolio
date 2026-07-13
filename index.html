@@ -99,46 +99,55 @@
       <div class="hero-grid"></div>
       <div class="hero-glow glow-1"></div>
       <div class="hero-glow glow-2"></div>
+      <div class="hero-glow glow-3"></div>
     </div>
 
     <div class="hero-inner">
-      <div class="hero-photo-wrap" data-reveal>
-        <div class="photo-ring"></div>
-        <img src="assets/irvan.jpg" alt="Portrait of Irvan Fauzi, web developer and computer science student" class="hero-photo" width="320" height="320">
-        <span class="status-badge"><span class="status-dot"></span>Open to work</span>
+      <div class="hero-text-col">
+        <p class="eyebrow" data-reveal>Computer Science Student · Tangerang, Indonesia</p>
+        <h1 class="hero-title" data-reveal>Hi, I'm<br>Irvan Fauzi</h1>
+        <p class="hero-role" data-reveal>
+          <span id="typedRole">Web Developer</span><span class="cursor">|</span>
+        </p>
+        <p class="lead" data-reveal>
+          I build practical business systems, from POS platforms to digital literacy programs, grounded in applied research and clean, human centered code.
+        </p>
+
+        <div class="hero-actions" data-reveal>
+          <a href="#contact" class="btn btn-primary">
+            <span>Contact me</span>
+          </a>
+          <a href="#work" class="btn btn-outline">View my work</a>
+        </div>
+
+        <div class="hero-links" data-reveal>
+          <a href="mailto:irvaaanfauzi@gmail.com" class="hero-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+            irvaaanfauzi@gmail.com
+          </a>
+          <a href="https://linkedin.com/in/irvanfauzi" target="_blank" rel="noopener" class="hero-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            linkedin.com/in/irvanfauzi
+          </a>
+        </div>
       </div>
 
-      <p class="eyebrow" data-reveal>Computer Science Student · Tangerang, Indonesia</p>
-      <h1 class="hero-title" data-reveal>Irvan Fauzi</h1>
-      <p class="hero-role" data-reveal>
-        <span id="typedRole">Web Developer</span><span class="cursor">|</span>
-      </p>
-      <p class="lead" data-reveal>
-        I build practical business systems, from POS platforms to digital literacy programs, grounded in applied research and clean, human centered code.
-      </p>
-
-      <div class="hero-actions" data-reveal>
-        <a href="#contact" class="btn btn-primary">
-          <span>Contact me</span>
-        </a>
-        <a href="#work" class="btn btn-outline">View my work</a>
+      <div class="hero-photo-col" data-reveal>
+        <div class="hero-photo-wrap">
+          <div class="photo-ring"></div>
+          <div class="photo-inner">
+            <img src="assets/irvan.jpg" alt="Portrait of Irvan Fauzi, web developer and computer science student" class="hero-photo" width="320" height="320">
+          </div>
+          <span class="floating-chip chip-1">&lt;/&gt;</span>
+          <span class="floating-chip chip-2">☕</span>
+          <span class="status-badge"><span class="status-dot"></span>Open to work</span>
+        </div>
       </div>
-
-      <div class="hero-links" data-reveal>
-        <a href="mailto:irvaaanfauzi@gmail.com" class="hero-link">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
-          irvaaanfauzi@gmail.com
-        </a>
-        <a href="https://linkedin.com/in/irvanfauzi" target="_blank" rel="noopener" class="hero-link">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-          linkedin.com/in/irvanfauzi
-        </a>
-      </div>
-
-      <a href="#about" class="scroll-cue" aria-label="Scroll to content">
-        <span></span>
-      </a>
     </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to content">
+      <span></span>
+    </a>
   </section>
 
   <!-- ABOUT -->
@@ -304,22 +313,40 @@
 
     <div class="cert-grid">
       <div class="cert cert-featured" data-reveal>
-        <span class="cert-icon">🎓</span>
-        <h3>Bachelor of Computer Science</h3>
-        <p class="cert-meta">Pamulang University, South Tangerang · Mar 2022 to Present</p>
-        <p class="cert-text">Currently completing final year thesis, with a focus on web system design and applied research.</p>
+        <div class="cert-preview">
+          <svg class="cert-seal" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5L6 22l6-3 6 3-2.5-8.5"/></svg>
+          <div class="cert-preview-lines"><span></span><span></span><span style="width:60%"></span></div>
+          <span class="cert-watermark">DIPLOMA</span>
+        </div>
+        <div class="cert-body">
+          <h3>Bachelor of Computer Science</h3>
+          <p class="cert-meta">Pamulang University, South Tangerang · Mar 2022 to Present</p>
+          <p class="cert-text">Currently completing final year thesis, with a focus on web system design and applied research.</p>
+        </div>
       </div>
       <div class="cert" data-reveal>
-        <span class="cert-icon">📜</span>
-        <h3>BNSP Certified Programmer</h3>
-        <p class="cert-meta">LSP Universitas Pamulang · May 2025</p>
-        <p class="cert-text">No. 02360/SKK/LSP-UNPAM/2025. Covers program specification, structured and OOP, libraries, database access.</p>
+        <div class="cert-preview">
+          <svg class="cert-seal" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+          <div class="cert-preview-lines"><span></span><span></span><span style="width:45%"></span></div>
+          <span class="cert-watermark">CERTIFIED</span>
+        </div>
+        <div class="cert-body">
+          <h3>BNSP Certified Programmer</h3>
+          <p class="cert-meta">LSP Universitas Pamulang · May 2025</p>
+          <p class="cert-text">No. 02360/SKK/LSP-UNPAM/2025. Covers program specification, structured and OOP, libraries, database access.</p>
+        </div>
       </div>
       <div class="cert" data-reveal>
-        <span class="cert-icon">🌐</span>
-        <h3>TOEFL Prediction Test, Score 323</h3>
-        <p class="cert-meta">Lembaga Bahasa UNPAM · Valid until Feb 2027</p>
-        <p class="cert-text">Listening 32, Structure 36, Reading 29.</p>
+        <div class="cert-preview">
+          <svg class="cert-seal" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 010 18M12 3a9 9 0 000 18"/><path d="M3 12h18"/></svg>
+          <div class="cert-preview-lines"><span></span><span></span><span style="width:70%"></span></div>
+          <span class="cert-watermark">TOEFL</span>
+        </div>
+        <div class="cert-body">
+          <h3>TOEFL Prediction Test, Score 323</h3>
+          <p class="cert-meta">Lembaga Bahasa UNPAM · Valid until Feb 2027</p>
+          <p class="cert-text">Listening 32, Structure 36, Reading 29.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -377,6 +404,10 @@
   <p>© <span id="year"></span> Irvan Fauzi. All rights reserved.</p>
   <p class="footer-sub">Built with care in Tangerang.</p>
 </footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
 
 <script src="script.js"></script>
 </body>
