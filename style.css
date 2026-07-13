@@ -607,7 +607,7 @@ html.js [data-reveal] {
   transform: translateY(24px);
   transition: opacity 0.7s cubic-bezier(.2,.7,.3,1), transform 0.7s cubic-bezier(.2,.7,.3,1);
 }
-[data-reveal].in-view { opacity: 1; transform: translateY(0); }
+html.js [data-reveal].in-view { opacity: 1; transform: translateY(0); }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 860px) {
