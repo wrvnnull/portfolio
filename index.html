@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Irvan Fauzi | Web Developer & Computer Science Student</title>
+<meta name="description" content="Portfolio of Irvan Fauzi, a final-year Computer Science student and full-stack web developer based in Tangerang, Indonesia. Published researcher in web systems and digital literacy, building with PHP, Java Spring Boot, React and more.">
+<meta name="keywords" content="Irvan Fauzi, web developer, computer science student, full stack developer, Tangerang, Indonesia, PHP developer, Java Spring Boot, React developer, portfolio">
+<meta name="author" content="Irvan Fauzi">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://irvanfauzi.pages.dev/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://irvanfauzi.pages.dev/">
+<meta property="og:title" content="Irvan Fauzi | Web Developer & Computer Science Student">
+<meta property="og:description" content="Final-year Computer Science student and full-stack web developer based in Tangerang, Indonesia. Published researcher in web systems and digital literacy education.">
+<meta property="og:image" content="https://irvanfauzi.pages.dev/assets/irvan.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Irvan Fauzi Portfolio">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Irvan Fauzi | Web Developer & Computer Science Student">
+<meta name="twitter:description" content="Final-year Computer Science student and full-stack web developer based in Tangerang, Indonesia.">
+<meta name="twitter:image" content="https://irvanfauzi.pages.dev/assets/irvan.jpg">
+
+<meta name="theme-color" content="#0A0E17">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/irvan.jpg">
+<script>document.documentElement.classList.add('js');</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Irvan Fauzi",
+  "url": "https://irvanfauzi.pages.dev/",
+  "image": "https://irvanfauzi.pages.dev/assets/irvan.jpg",
+  "jobTitle": "Web Developer",
+  "email": "mailto:irvaaanfauzi@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Tangerang",
+    "addressRegion": "Banten",
+    "addressCountry": "ID"
+  },
+  "sameAs": ["https://linkedin.com/in/irvanfauzi"],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Pamulang University"
+  },
+  "knowsAbout": ["Web Development", "PHP", "Java", "Spring Boot", "React", "MySQL", "Python"]
+}
+</script>
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+<div class="progress-bar" id="progressBar"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="logo">IF<span class="logo-dot">.</span></a>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#experience" class="nav-link">Experience</a>
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark and light theme">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+      </button>
+      <a href="#contact" class="btn btn-small">Get in touch</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="hero-grid"></div>
+      <div class="hero-glow glow-1"></div>
+      <div class="hero-glow glow-2"></div>
+    </div>
+
+    <div class="hero-inner">
+      <div class="hero-photo-wrap" data-reveal>
+        <div class="photo-ring"></div>
+        <img src="assets/irvan.jpg" alt="Portrait of Irvan Fauzi, web developer and computer science student" class="hero-photo" width="320" height="320">
+        <span class="status-badge"><span class="status-dot"></span>Open to work</span>
+      </div>
+
+      <p class="eyebrow" data-reveal>Computer Science Student · Tangerang, Indonesia</p>
+      <h1 class="hero-title" data-reveal>Irvan Fauzi</h1>
+      <p class="hero-role" data-reveal>
+        <span id="typedRole">Web Developer</span><span class="cursor">|</span>
+      </p>
+      <p class="lead" data-reveal>
+        I build practical business systems, from POS platforms to digital literacy programs, grounded in applied research and clean, human centered code.
+      </p>
+
+      <div class="hero-actions" data-reveal>
+        <a href="#contact" class="btn btn-primary">
+          <span>Contact me</span>
+        </a>
+        <a href="#work" class="btn btn-outline">View my work</a>
+      </div>
+
+      <div class="hero-links" data-reveal>
+        <a href="mailto:irvaaanfauzi@gmail.com" class="hero-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+          irvaaanfauzi@gmail.com
+        </a>
+        <a href="https://linkedin.com/in/irvanfauzi" target="_blank" rel="noopener" class="hero-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          linkedin.com/in/irvanfauzi
+        </a>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to content">
+        <span></span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">01 · About</p>
+      <h2 class="section-title">A developer who ships and researches.</h2>
+    </div>
+
+    <div class="about-grid">
+      <p class="about-text" data-reveal>
+        I am a final year Computer Science undergraduate with published research experience in web system design and digital literacy education. I built a web based POS system that automated transactions and stock management for a retail client, and co-led a digital literacy workshop for 36 students. I am comfortable across the stack, from PHP, MySQL, Java and Spring Boot on the backend to React on the front end, with added experience in Web3 community management and AI assisted workflows.
+      </p>
+
+      <div class="stats" data-reveal>
+        <div class="stat">
+          <span class="stat-num" data-count="2">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Published papers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="4">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Years of work experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="36">0</span>
+          <span class="stat-label">Students trained</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="10">0</span><span class="stat-suffix">+</span>
+          <span class="stat-label">Technologies used</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section alt">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">02 · Skills</p>
+      <h2 class="section-title">Tools I work with.</h2>
+    </div>
+
+    <div class="skill-grid">
+      <div class="skill-group" data-reveal>
+        <h3>Programming</h3>
+        <div class="chips">
+          <span>C</span><span>C++</span><span>Java</span><span>Spring Boot</span><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>Python</span><span>PHP</span><span>CodeIgniter 4</span>
+        </div>
+      </div>
+      <div class="skill-group" data-reveal>
+        <h3>Database</h3>
+        <div class="chips">
+          <span>MySQL</span><span>phpMyAdmin</span><span>Database design</span>
+        </div>
+      </div>
+      <div class="skill-group" data-reveal>
+        <h3>Tools &amp; Workflow</h3>
+        <div class="chips">
+          <span>Git</span><span>GitHub</span><span>VS Code</span><span>Postman</span><span>MS Office</span>
+        </div>
+      </div>
+      <div class="skill-group" data-reveal>
+        <h3>AI &amp; Automation</h3>
+        <div class="chips">
+          <span>Prompt engineering</span><span>AI content tools</span><span>AI agents</span><span>Workflow automation</span>
+        </div>
+      </div>
+      <div class="skill-group" data-reveal>
+        <h3>Web3 &amp; Community</h3>
+        <div class="chips">
+          <span>Community management</span><span>Web3 fundamentals</span><span>Digital content strategy</span>
+        </div>
+      </div>
+      <div class="skill-group" data-reveal>
+        <h3>Professional</h3>
+        <div class="chips">
+          <span>Problem solving</span><span>Communication</span><span>Time management</span><span>Team collaboration</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">03 · Experience</p>
+      <h2 class="section-title">Where I have worked.</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-head">
+            <h3>Social Media Manager</h3>
+            <span class="timeline-date">Mar 2025 · Jul 2026</span>
+          </div>
+          <p class="timeline-org">CipherPlay · Contract, Remote</p>
+          <ul>
+            <li>Managed marketing campaigns and social content across multiple software products, generating thousands of impressions.</li>
+            <li>Grew and moderated Web3 based online communities, partnering cross functionally to lift engagement and brand visibility.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <div class="timeline-head">
+            <h3>Processing Staff</h3>
+            <span class="timeline-date">Jan 2022 · Apr 2024</span>
+          </div>
+          <p class="timeline-org">PT Global Jet Express (J&amp;T Express), Tangerang · Part-Time</p>
+          <ul>
+            <li>Sorted and processed packages per SOP, maintaining shipment accuracy and documentation.</li>
+            <li>Contributed to warehouse workflow optimization and operational efficiency.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK / PUBLICATIONS -->
+  <section id="work" class="section alt">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">04 · Publications &amp; Projects</p>
+      <h2 class="section-title">Applied research, shipped.</h2>
+    </div>
+
+    <div class="cards">
+      <a class="card" href="https://doi.org/10.47233/jibs.v2i3.1874" target="_blank" rel="noopener" data-reveal>
+        <div class="card-top">
+          <span class="card-tag">Intechcom Computer Store</span>
+          <svg class="card-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <h3>Web-Based Cashier System</h3>
+        <p class="card-meta">JIBS, Vol. 2 No. 3, pp. 487 to 492 (2024)</p>
+        <p class="card-text">Co-built a web based POS system during a Sep to Dec 2024 internship. Real time transaction logging, inventory monitoring, and automated reporting delivered via an Agile approach.</p>
+        <div class="chips">
+          <span>PHP</span><span>MySQL</span><span>Agile</span><span>POS</span>
+        </div>
+      </a>
+      <a class="card" href="https://jurnalmahasiswa.com/index.php/appa/article/view/1000" target="_blank" rel="noopener" data-reveal>
+        <div class="card-top">
+          <span class="card-tag">SMPN 274 West Jakarta</span>
+          <svg class="card-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+        <h3>Website Literacy Workshop for Gen Z</h3>
+        <p class="card-meta">APPA Journal, Vol. 2 No. 1, pp. 29 to 33 (2024)</p>
+        <p class="card-text">Co-led a digital literacy and internet safety workshop for 36 students, training them to build sites with WordPress.</p>
+        <div class="chips">
+          <span>WordPress</span><span>Education</span><span>Community</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- EDUCATION & CERTIFICATIONS -->
+  <section id="education" class="section">
+    <div class="section-head" data-reveal>
+      <p class="section-eyebrow">05 · Education &amp; Certifications</p>
+      <h2 class="section-title">Academic background and credentials.</h2>
+    </div>
+
+    <div class="cert-grid">
+      <div class="cert cert-featured" data-reveal>
+        <span class="cert-icon">🎓</span>
+        <h3>Bachelor of Computer Science</h3>
+        <p class="cert-meta">Pamulang University, South Tangerang · Mar 2022 to Present</p>
+        <p class="cert-text">Currently completing final year thesis, with a focus on web system design and applied research.</p>
+      </div>
+      <div class="cert" data-reveal>
+        <span class="cert-icon">📜</span>
+        <h3>BNSP Certified Programmer</h3>
+        <p class="cert-meta">LSP Universitas Pamulang · May 2025</p>
+        <p class="cert-text">No. 02360/SKK/LSP-UNPAM/2025. Covers program specification, structured and OOP, libraries, database access.</p>
+      </div>
+      <div class="cert" data-reveal>
+        <span class="cert-icon">🌐</span>
+        <h3>TOEFL Prediction Test, Score 323</h3>
+        <p class="cert-meta">Lembaga Bahasa UNPAM · Valid until Feb 2027</p>
+        <p class="cert-text">Listening 32, Structure 36, Reading 29.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section alt contact-section">
+    <div class="section-head center" data-reveal>
+      <p class="section-eyebrow">06 · Contact</p>
+      <h2 class="section-title">Let's build something together.</h2>
+      <p class="section-text">Have a project, an opportunity, or just want to say hi? Send a message and I will get back to you.</p>
+    </div>
+
+    <div class="contact-grid" data-reveal>
+      <div class="contact-info">
+        <a class="contact-item" href="mailto:irvaaanfauzi@gmail.com">
+          <span class="contact-label">Email</span>
+          <span>irvaaanfauzi@gmail.com</span>
+        </a>
+        <a class="contact-item" href="tel:+6285714531812">
+          <span class="contact-label">Phone</span>
+          <span>+62 857-1453-1812</span>
+        </a>
+        <a class="contact-item" href="https://linkedin.com/in/irvanfauzi" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span>linkedin.com/in/irvanfauzi</span>
+        </a>
+        <div class="contact-item">
+          <span class="contact-label">Location</span>
+          <span>Tangerang, Banten, Indonesia</span>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label>
+          Name
+          <input type="text" name="name" required maxlength="100">
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required maxlength="100">
+        </label>
+        <label>
+          Message
+          <textarea name="message" required maxlength="1000" rows="5"></textarea>
+        </label>
+        <p class="form-hint">Max 1000 characters. I typically reply within 1 to 2 days.</p>
+        <button type="submit" class="btn btn-primary btn-full">Send message</button>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© <span id="year"></span> Irvan Fauzi. All rights reserved.</p>
+  <p class="footer-sub">Built with care in Tangerang.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
