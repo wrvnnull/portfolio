@@ -366,7 +366,23 @@ html[data-theme="dark"] .icon-moon { display: block; }
   font-size: 17px;
   color: var(--muted);
   max-width: 520px;
-  margin: 0 0 36px;
+  margin: 0 0 18px;
+}
+.hero-avail {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--teal);
+  margin: 0 0 30px;
+}
+.avail-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: var(--teal);
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--teal) 60%, transparent);
+  animation: pulse 2s infinite;
 }
 .hero-actions {
   display: flex;
@@ -562,6 +578,48 @@ html[data-theme="dark"] .icon-moon { display: block; }
 .copy-btn:hover { border-color: var(--navy); }
 .copy-btn.copied { color: var(--teal); border-color: var(--teal); }
 
+/* ===== SERVICES ===== */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.service-card {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  padding: 28px;
+  transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+  border-color: var(--navy);
+}
+.service-icon {
+  width: 46px; height: 46px;
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--navy) 12%, var(--bg-alt));
+  color: var(--navy);
+  margin-bottom: 18px;
+}
+.service-card h3 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  margin: 0 0 10px;
+}
+.service-card > p {
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0 0 16px;
+}
+@media (max-width: 860px) {
+  .service-grid { grid-template-columns: 1fr; }
+}
+
 /* ===== TIMELINE ===== */
 .timeline {
   position: relative;
@@ -646,7 +704,7 @@ html[data-theme="dark"] .icon-moon { display: block; }
   body::before, body::after,
   .noise-overlay, .progress-bar, .nav, .hero-photo-col,
   .scroll-cue, .back-to-top, .theme-toggle, .nav-toggle,
-  .cv-download, .contact-form, .footer, .status-badge { display: none !important; }
+  .cv-download, .contact-form, .footer, .status-badge, .service-grid { display: none !important; }
   .section { padding: 18px 0 !important; max-width: 100% !important; }
   .section.alt { background: #fff !important; }
   .section.alt > * { max-width: 100% !important; }
