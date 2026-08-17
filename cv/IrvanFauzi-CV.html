@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Irvan Fauzi — CV</title>
+<style>
+  @page { size: A4; margin: 14mm 14mm 14mm 14mm; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Helvetica Neue", Arial, "Liberation Sans", sans-serif;
+    color: #111;
+    font-size: 10.5pt;
+    line-height: 1.36;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  a { color: #111; text-decoration: none; }
+
+  .hdr { border-bottom: 2px solid #111; padding-bottom: 6px; margin-bottom: 10px; }
+  .hdr h1 { margin: 0; font-size: 21pt; letter-spacing: 0.3px; }
+  .hdr .role { font-size: 11.5pt; font-weight: bold; margin: 2px 0 4px; }
+  .hdr .contact { font-size: 9.2pt; color: #333; }
+  .hdr .contact span { white-space: nowrap; }
+  .hdr .contact .sep { color: #999; padding: 0 6px; }
+
+  h2 {
+    font-size: 11.5pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 2px;
+    margin: 13px 0 6px;
+  }
+
+  .summary { margin: 0 0 4px; }
+
+  .item { margin: 0 0 8px; }
+  .item .top { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; }
+  .item .title { font-weight: bold; font-size: 10.5pt; }
+  .item .org { font-style: italic; color: #333; font-size: 9.6pt; }
+  .item .dates { font-size: 9.4pt; color: #333; white-space: nowrap; }
+  ul { margin: 2px 0 0; padding-left: 16px; }
+  li { margin: 1px 0; }
+
+  .proj .stack { font-size: 9.4pt; color: #555; font-weight: bold; margin: 1px 0 2px; }
+
+  .skills-grid { display: block; }
+  .skills-grid .row { margin: 1px 0; }
+  .skills-grid .k { font-weight: bold; }
+  .skills-grid .v { color: #222; }
+
+  .edu .c { margin: 0 0 5px; }
+  .edu .c .t { font-weight: bold; }
+  .edu .c .m { font-size: 9.4pt; color: #333; }
+  .edu .c .d { font-size: 9.4pt; }
+
+  .pub { margin: 0 0 5px; }
+  .pub .pt { font-weight: bold; }
+  .pub .pm { font-size: 9.4pt; color: #333; }
+
+  @media print {
+    body { font-size: 10.5pt; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="hdr">
+    <h1>Irvan Fauzi</h1>
+    <div class="role">Junior Full-Stack Engineer — Web · Automation · AI · QA</div>
+    <div class="contact">
+      <span>Tangerang, Banten, Indonesia</span><span class="sep">|</span>
+      <span>irvaaanfauzi@gmail.com</span><span class="sep">|</span>
+      <span>+62 857-1453-1812</span><br>
+      <span>GitHub: github.com/wrvnnull</span><span class="sep">|</span>
+      <span>LinkedIn: linkedin.com/in/irvanfauzi</span><span class="sep">|</span>
+      <span>Portfolio: irvanfauzi.pages.dev</span>
+    </div>
+  </div>
+
+  <h2>Summary</h2>
+  <p class="summary">Final-year Computer Science student who builds, tests, and ships software across web, automation, and AI. I develop public, CI-verified projects in PHP/MySQL, TypeScript/React, and Python — with a consistent quality backbone of automated testing and CI/CD. Open to junior full-stack, software engineering, QA automation, and Python automation roles.</p>
+
+  <h2>Experience</h2>
+
+  <div class="item">
+    <div class="top">
+      <div><span class="title">Web3 / Community / Content / Technical Support</span> — <span class="org">CipherPlay (Contract, Remote)</span></div>
+      <div class="dates">Mar 2025 – Jul 5, 2026</div>
+    </div>
+    <ul>
+      <li>Managed marketing campaigns and social content across multiple software products.</li>
+      <li>Grew and moderated Web3 communities, answering technical questions and supporting engagement.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="top">
+      <div><span class="title">Technician</span> — <span class="org">PT. Unicom Harbura Jaya Makmur (PKWT Contract)</span></div>
+      <div class="dates">Jul 2022 · ±1 week</div>
+    </div>
+    <ul>
+      <li>Joined as Technician under a PKWT arrangement at the Unicom Care Karawaci site.</li>
+      <li>Contract issued 27 Jul 2022; actively engaged on the role for approximately one week.</li>
+    </ul>
+  </div>
+
+  <div class="item">
+    <div class="top">
+      <div><span class="title">Processing Staff (Part-Time)</span> — <span class="org">PT Global Jet Express (J&amp;T Express), Tangerang</span></div>
+      <div class="dates">Jan 2022 – Apr 2024</div>
+    </div>
+    <ul>
+      <li>Sorted and processed packages per SOP, maintaining shipment accuracy and documentation.</li>
+      <li>Contributed to warehouse workflow optimization and operational efficiency.</li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+
+  <div class="item proj">
+    <div class="top"><div><span class="title">Developer Job Tracker</span></div></div>
+    <div class="stack">Next.js · TypeScript · React · API · CI</div>
+    <p style="margin:1px 0 0">Responsive job-tracking dashboard: add/edit/delete applications, filter by status, live summary counts, form validation, and loading/empty/error states. Backed by Next.js route handlers and a separated data layer. CI: lint + typecheck + test + build.</p>
+  </div>
+
+  <div class="item proj">
+    <div class="top"><div><span class="title">Student Assessment Web App</span></div></div>
+    <div class="stack">PHP · MySQL · Authentication · Docker</div>
+    <p style="margin:1px 0 0">Role-based (admin/student) assessment system with login, class &amp; grade management, and attendance. Containerized with Docker; validated by CI (build + compose up + smoke test).</p>
+  </div>
+
+  <div class="item proj">
+    <div class="top"><div><span class="title">AI Job / Document Analyzer</span></div></div>
+    <div class="stack">Python · LLM API · pytest · GitHub Actions</div>
+    <p style="margin:1px 0 0">LLM-powered automation that compares a CV against a job description and returns structured JSON (role, matched/missing skills, recommendations). Unit-tested with mocked LLM calls; CI runs without an API key.</p>
+  </div>
+
+  <div class="item proj">
+    <div class="top"><div><span class="title">Portfolio E2E Test Suite</span> <span class="org">(QA)</span></div></div>
+    <div class="stack">Playwright · TypeScript · GitHub Actions</div>
+    <p style="margin:1px 0 0">End-to-end tests validating navigation, projects, contact, responsive behavior, and accessibility — with CI on every push.</p>
+  </div>
+
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="row"><span class="k">Core:</span> <span class="v">PHP, MySQL, Python, JavaScript, TypeScript, Git</span></div>
+    <div class="row"><span class="k">Web &amp; Application:</span> <span class="v">React, Next.js, Tailwind CSS, REST API</span></div>
+    <div class="row"><span class="k">Testing &amp; Quality:</span> <span class="v">Playwright, Postman, Newman, E2E Testing, CI</span></div>
+    <div class="row"><span class="k">AI &amp; Automation:</span> <span class="v">Python Automation, LLM API, Structured Output, Workflow Automation</span></div>
+    <div class="row"><span class="k">DevOps / Tools:</span> <span class="v">Docker, GitHub Actions, Cloudflare</span></div>
+    <div class="row"><span class="k">Familiar With:</span> <span class="v">Java / Spring Boot, C / C++, Laravel, PostgreSQL, Solidity</span></div>
+  </div>
+
+  <h2>Education &amp; Certifications</h2>
+  <div class="edu">
+    <div class="c"><div class="t">Bachelor of Computer Science</div><div class="m">Pamulang University, South Tangerang · 2022 – Present (final-year)</div></div>
+    <div class="c"><div class="t">BNSP Certified Programmer</div><div class="m">LSP Universitas Pamulang · May 2025 (No. 02360/SKK/LSP-UNPAM/2025)</div></div>
+    <div class="c"><div class="t">TOEFL Prediction 323</div><div class="m">Lembaga Bahasa UNPAM · Valid until Feb 2027</div></div>
+  </div>
+
+  <h2>Research &amp; Publications</h2>
+  <div class="pub">
+    <div class="pt">Web-Based Cashier System</div>
+    <div class="pm">JIBS, 2024 — Applied research on a PHP/MySQL POS system with real-time transactions and inventory.</div>
+  </div>
+  <div class="pub">
+    <div class="pt">Website Literacy Workshop for Gen Z</div>
+    <div class="pm">APPA, 2024 — Co-led a digital literacy &amp; internet safety workshop for 36 students (WordPress).</div>
+  </div>
+
+</body>
+</html>

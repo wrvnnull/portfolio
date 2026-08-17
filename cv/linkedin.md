@@ -7,7 +7,7 @@ Junior Full-Stack Engineer — PHP/Python/TypeScript · QA Automation · AI Work
 
 # LinkedIn — About
 
-I'm Irvan Fauzi, a junior full-stack engineer who builds, tests, automates, and ships software across web, AI, and automation workflows.
+I'm Irvan Fauzi, a junior full-stack engineer who builds, tests, and ships software across web, automation, and AI.
 
 What I build:
 - Web apps with PHP/MySQL and React/Next.js (role-based systems, dashboards)

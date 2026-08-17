@@ -230,15 +230,6 @@ try {
   });
 } catch (err) { console.warn('Copy button unavailable', err); }
 
-/* ===== SAVE AS CV (PDF) ===== */
-try {
-  const downloadCv = document.getElementById('downloadCv');
-  if (downloadCv) {
-    downloadCv.addEventListener('click', () => {
-      const originalTitle = document.title;
-      document.title = 'Irvan Fauzi - CV';
-      window.print();
-      document.title = originalTitle;
-    });
-  }
-} catch (err) { console.warn('CV download unavailable', err); }
+/* ===== SAVE AS CV (PDF) =====
+   CV buttons are now <a download> links to assets/IrvanFauzi-CV.pdf
+   (rendered, ATS-friendly final PDF). No JS needed. */
