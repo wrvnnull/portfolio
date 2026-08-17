@@ -2,6 +2,31 @@
 
 Use these beyond "Full-Stack Developer" to broaden your reach. Copy the relevant block into job-board search filters.
 
+## Title variations (use as exact search terms)
+- Junior Full Stack Engineer
+- Junior Full-Stack Developer
+- Junior Software Engineer
+- Software Engineer Intern
+- Associate Software Engineer
+- Web Application Developer
+- Application Developer
+- QA Engineer
+- QA Automation Engineer
+- Test Automation Engineer
+- SDET Junior
+- Python Automation Engineer
+- AI Automation Engineer
+- AI Workflow Engineer
+- Technical Support Engineer
+- IT Support
+- Technical Operations
+- Web3 Technical Contributor
+
+> Note: not all these titles fit you equally. Priority by evidence:
+> Strong fit → Junior Full-Stack, Junior SWE, QA Automation, Test Automation, Python Automation, Web App Developer.
+> Selective → Frontend, Backend, AI Automation, Technical Support, IT Support.
+> Fit-only → Web3 Technical Contributor, SDET (enterprise), Technical Operations.
+
 ## Full-Stack
 junior full-stack developer, full-stack engineer, full-stack web developer, Next.js developer, PHP full-stack, web application developer
 
