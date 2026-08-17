@@ -214,26 +214,6 @@ try {
   });
 } catch (err) { console.warn('Contact form unavailable', err); }
 
-/* ===== PROFICIENCY BARS ===== */
-try {
-  const prof = document.querySelector('.proficiency');
-  if (prof) {
-    const fills = prof.querySelectorAll('.bar-fill');
-    const profObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          fills.forEach((el, i) => {
-            const lvl = el.getAttribute('data-level');
-            setTimeout(() => { el.style.width = lvl + '%'; }, i * 90);
-          });
-          profObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.3 });
-    profObserver.observe(prof);
-  }
-} catch (err) { console.warn('Proficiency bars unavailable', err); }
-
 /* ===== COPY EMAIL ===== */
 try {
   document.querySelectorAll('.copy-btn').forEach(btn => {
