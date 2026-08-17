@@ -498,6 +498,70 @@ html[data-theme="dark"] .icon-moon { display: block; }
 }
 .chips span:hover { border-color: var(--navy); color: var(--navy); transform: translateY(-2px); }
 
+/* ===== PROFICIENCY ===== */
+.proficiency { margin-top: 56px; }
+.proficiency h3 {
+  font-family: var(--font-display);
+  font-size: 15px;
+  color: var(--navy);
+  margin: 0 0 22px;
+}
+.bars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px 40px;
+}
+.bar {
+  display: grid;
+  grid-template-columns: 120px 1fr auto;
+  align-items: center;
+  gap: 14px;
+}
+.bar-label { font-size: 14px; font-weight: 500; color: var(--text); }
+.bar-track {
+  height: 8px;
+  border-radius: 999px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+.bar-fill {
+  height: 100%;
+  width: 0;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--navy), var(--teal));
+  transition: width 1.1s cubic-bezier(.2,.8,.2,1);
+}
+.bar-pct {
+  font-size: 13px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  min-width: 38px;
+  text-align: right;
+}
+@media (max-width: 860px) {
+  .bars { grid-template-columns: 1fr; }
+  .bar { grid-template-columns: 100px 1fr auto; }
+}
+
+/* ===== COPY EMAIL BUTTON ===== */
+.contact-email { font-size: 15px; }
+.copy-btn {
+  align-self: flex-start;
+  margin-top: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--glass-border);
+  background: var(--bg-alt);
+  color: var(--navy);
+  cursor: pointer;
+  transition: border-color .2s, color .2s, background .2s;
+}
+.copy-btn:hover { border-color: var(--navy); }
+.copy-btn.copied { color: var(--teal); border-color: var(--teal); }
+
 /* ===== TIMELINE ===== */
 .timeline {
   position: relative;

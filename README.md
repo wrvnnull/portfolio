@@ -1,48 +1,49 @@
 # Irvan Fauzi — Portfolio
 
-Modern, animated one-page portfolio site. Pure HTML/CSS/JS, no build step, no framework, no dependencies.
+Modern, animated one-page developer portfolio. Pure HTML/CSS/JS — no framework, no build step, no backend. Deployed on **Cloudflare Pages** with automatic CI quality checks.
+
+## Why this stays static
+A personal portfolio works best as a static site: it is free, instantly fast on the edge, secure by default (nothing to patch), and auto-deploys on every push. The "wow" factor here comes from polish + engineering hygiene, not from a backend you have to maintain while job-hunting.
 
 ## Features
-- Dark / light theme toggle (remembers your choice, respects system preference)
-- Circular profile photo with animated gradient ring
+- Dark / light theme toggle (remembers choice, respects system preference)
+- Circular profile photo with animated conic-gradient ring
 - Typing animation cycling through roles
-- Scroll-triggered reveal animations, animated stat counters
-- Fully responsive, mobile nav
-- Full SEO: meta description/keywords, Open Graph, Twitter Card, canonical URL, JSON-LD Person schema, `robots.txt`, `sitemap.xml`
-- Graceful degradation: content stays fully visible even if JavaScript fails to load
+- Scroll-triggered reveals, animated stat counters, animated skill-proficiency bars
+- **Copy-email button** on the contact card
+- **Save as CV (PDF)** — clean print stylesheet that strips nav/animations for a recruiter-ready PDF
+- Fully responsive with mobile nav
+- Full SEO: meta description/keywords, Open Graph, Twitter Card, canonical, JSON-LD Person schema, `robots.txt`, `sitemap.xml`
+- Graceful degradation — content stays visible even if JavaScript fails
+- **CI**: GitHub Actions lints HTML (`htmlhint`) and validates JS (`node --check`) on every push/PR
 
 ## Structure
 ```
-index.html      — page content + SEO meta tags
-style.css       — styling, theme tokens, animations
-script.js       — theme toggle, reveal animations, typing effect, contact form
-robots.txt      — search engine crawl rules
-sitemap.xml     — sitemap for search engines
-assets/
-  irvan.jpg     — profile photo
-  favicon.svg   — site icon
+index.html          — page content + SEO meta + Person schema
+style.css           — theme tokens, layout, animations, print stylesheet
+script.js           — theme, reveals, typing, counters, proficiency bars, copy, CV print
+robots.txt          — crawl rules
+sitemap.xml         — sitemap
+assets/irvan.jpg    — profile photo
+assets/favicon.svg  — site icon
+.github/workflows/  — CI quality gate
 ```
 
-## Before deploying
-Update the domain placeholder `https://irvanfauzi.pages.dev/` in `index.html`, `robots.txt`, and `sitemap.xml` once you know your final Cloudflare Pages URL or custom domain.
-
-## Run locally
+## Local development
 ```bash
-python3 -m http.server 8080
+python3 -m http.server 8080      # preview at http://localhost:8080
+npm install && npm run lint       # run the same checks CI runs
 ```
-Then open `http://localhost:8080`.
 
-## Deploy to Cloudflare Pages
+## Deploy
+Hosted on Cloudflare Pages, connected to this GitHub repo.
+- **Framework preset:** None
+- **Build command:** (empty)
+- **Build output directory:** `/`
 
-1. Push this folder to a new GitHub repo.
-2. Cloudflare dashboard → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**.
-3. Select your repo.
-4. Build settings:
-   - **Framework preset:** None
-   - **Build command:** (leave empty)
-   - **Build output directory:** `/`
-5. **Save and Deploy**. You'll get a `*.pages.dev` URL.
-6. (Optional) Add a custom domain under the Pages project → **Custom domains**.
+Every push to `main` triggers a Cloudflare build + the GitHub Actions CI check. No manual steps.
 
-No environment variables or build step required, it's a fully static site.
-
+## Editing content
+- Experience / work: edit the `.timeline` and `.cards` blocks in `index.html`
+- Skills: edit `.skill-group` and `.bar` (set `data-level` for the proficiency %) in `index.html`
+- Contact: update email/phone/LinkedIn in the `#contact` section and the `mailto:`/form endpoint

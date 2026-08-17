@@ -214,6 +214,42 @@ try {
   });
 } catch (err) { console.warn('Contact form unavailable', err); }
 
+/* ===== PROFICIENCY BARS ===== */
+try {
+  const prof = document.querySelector('.proficiency');
+  if (prof) {
+    const fills = prof.querySelectorAll('.bar-fill');
+    const profObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          fills.forEach((el, i) => {
+            const lvl = el.getAttribute('data-level');
+            setTimeout(() => { el.style.width = lvl + '%'; }, i * 90);
+          });
+          profObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    profObserver.observe(prof);
+  }
+} catch (err) { console.warn('Proficiency bars unavailable', err); }
+
+/* ===== COPY EMAIL ===== */
+try {
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const text = btn.getAttribute('data-copy');
+      try {
+        await navigator.clipboard.writeText(text);
+        const old = btn.textContent;
+        btn.textContent = 'Copied!';
+        btn.classList.add('copied');
+        setTimeout(() => { btn.textContent = old; btn.classList.remove('copied'); }, 1600);
+      } catch (e) { console.warn('Clipboard unavailable', e); }
+    });
+  });
+} catch (err) { console.warn('Copy button unavailable', err); }
+
 /* ===== SAVE AS CV (PDF) ===== */
 try {
   const downloadCv = document.getElementById('downloadCv');

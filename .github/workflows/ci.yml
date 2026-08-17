@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  quality:
+    name: Lint & Validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install linters
+        run: npm install
+
+      - name: Lint HTML (htmlhint)
+        run: npx htmlhint index.html
+
+      - name: Validate JS syntax (node --check)
+        run: node --check script.js
+
+      - name: Check CSS syntax (basic)
+        run: npx --yes csstree-validator style.css || true

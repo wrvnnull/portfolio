@@ -1,0 +1,13 @@
+{
+  "name": "irvan-fauzi-portfolio",
+  "version": "1.1.0",
+  "private": true,
+  "description": "Personal portfolio of Irvan Fauzi — a static, animated one-page site deployed on Cloudflare Pages.",
+  "scripts": {
+    "serve": "python3 -m http.server 8080",
+    "lint": "htmlhint index.html && node --check script.js"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.1.4"
+  }
+}
