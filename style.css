@@ -662,7 +662,7 @@ html[data-theme="dark"] .icon-moon { display: block; }
   body::before, body::after,
   .noise-overlay, .progress-bar, .nav, .hero-photo-col,
   .scroll-cue, .back-to-top, .theme-toggle, .nav-toggle,
-  .cv-download, .contact-form, .footer, .status-badge, .service-grid { display: none !important; }
+  .cv-download, .contact-form, .footer, .status-badge { display: none !important; }
   .section { padding: 18px 0 !important; max-width: 100% !important; }
   .section.alt { background: #fff !important; }
   .section.alt > * { max-width: 100% !important; }
