@@ -540,6 +540,80 @@ html[data-theme="dark"] .icon-moon { display: block; }
 .timeline ul { margin: 0; padding-left: 18px; color: var(--muted); font-size: 14.5px; }
 .timeline li { margin-bottom: 6px; }
 
+/* Short-term / contract entry marker — signals honesty, no exaggeration */
+.timeline-item.short .timeline-card {
+  border-style: dashed;
+  border-color: color-mix(in srgb, var(--teal) 45%, var(--border));
+}
+.timeline-item.short .timeline-dot {
+  background: var(--teal);
+}
+.timeline-item.short .timeline-org::after {
+  content: " · Short-term";
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--teal);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-left: 4px;
+}
+
+/* Section head with action button (CV download) */
+.section-head-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.cv-download {
+  white-space: nowrap;
+  cursor: pointer;
+}
+.cv-download:hover { border-color: var(--navy); color: var(--navy); }
+
+/* ===== PRINT / SAVE AS CV (PDF) ===== */
+@media print {
+  @page { margin: 14mm; }
+  html, body {
+    background: #fff !important;
+    color: #14161C !important;
+  }
+  body::before, body::after,
+  .noise-overlay, .progress-bar, .nav, .hero-photo-col,
+  .scroll-cue, .back-to-top, .theme-toggle, .nav-toggle,
+  .cv-download, .contact-form, .footer, .status-badge { display: none !important; }
+  .section { padding: 18px 0 !important; max-width: 100% !important; }
+  .section.alt { background: #fff !important; }
+  .section.alt > * { max-width: 100% !important; }
+  .hero { padding: 0 0 8px !important; min-height: auto !important; }
+  .hero-grid { display: none !important; }
+  .hero-inner { grid-template-columns: 1fr !important; min-height: auto !important; }
+  .hero-role, .cursor, .hero-actions, .scroll-cue { display: none !important; }
+  .eyebrow, .stat, .timeline-card, .card, .cert, .contact-item {
+    box-shadow: none !important;
+    background: #fff !important;
+    border: 1px solid #ddd !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+  .timeline { border-left-color: #aaa !important; }
+  .timeline-dot { box-shadow: 0 0 0 3px #fff !important; }
+  .timeline-item.short .timeline-card {
+    border: 1px dashed #0FBFA6 !important;
+  }
+  a { color: #14161C !important; text-decoration: none !important; }
+  .section-title, .hero-title, .card h3, .cert h3, .timeline-head h3 {
+    -webkit-text-fill-color: #14161C !important;
+    color: #14161C !important;
+  }
+  .section-eyebrow, .eyebrow, .timeline-org, .card-tag, .contact-label, .stat-label {
+    color: #2952E3 !important;
+  }
+  [data-reveal] { opacity: 1 !important; transform: none !important; }
+  .section, .hero { break-inside: avoid; }
+}
+
 /* ===== CARDS (WORK) ===== */
 .cards {
   display: grid;

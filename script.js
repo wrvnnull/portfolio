@@ -213,3 +213,16 @@ try {
     }
   });
 } catch (err) { console.warn('Contact form unavailable', err); }
+
+/* ===== SAVE AS CV (PDF) ===== */
+try {
+  const downloadCv = document.getElementById('downloadCv');
+  if (downloadCv) {
+    downloadCv.addEventListener('click', () => {
+      const originalTitle = document.title;
+      document.title = 'Irvan Fauzi - CV';
+      window.print();
+      document.title = originalTitle;
+    });
+  }
+} catch (err) { console.warn('CV download unavailable', err); }
