@@ -7,7 +7,20 @@ Workflow: FIND → VERIFY → MATCH → TAILOR → APPLY → TRACK
 
 | Date | Company | Role | Location | Match | Status | URL |
 | ---- | ------- | ---- | -------- | ----: | ------ | --- |
-|      |         |      |          |      | Found  |     |
+| 2026-08-18 | Pinhome | Junior Software Engineer | Jakarta | 78% | To Apply | https://id.linkedin.com/jobs/view/junior-software-engineer-at-pinhome-4449393013 |
+| 2026-08-18 | Kredivo Group | QA Engineer (SDE 1) – B2B | Jakarta | 72% | To Apply | https://id.linkedin.com/jobs/view/qa-engineer-sde-1-b2b-team-at-kredivo-group-4446728887 |
+| 2026-08-18 | Toyota Intercom | Junior Software Engineer | Padang | 75% | To Apply | https://id.linkedin.com/jobs/view/junior-software-engineer-at-toyota-intercom-4439053219 |
+| 2026-08-18 | Paper | Jr. QA Engineer | West Jakarta | 70% | To Apply | https://id.linkedin.com/jobs/view/jr-qa-engineer-at-paper-4422268323 |
+| 2026-08-18 | PT Digital Voucher Market | Junior Backend Developer | Yogyakarta | 68% | To Apply | https://id.linkedin.com/jobs/view/junior-backend-end-developer-at-pt-digital-voucher-market-bersama-4447302889 |
+| 2026-08-18 | PT Digital Voucher Market | Junior Front-End Developer | Yogyakarta | 70% | To Apply | https://id.linkedin.com/jobs/view/junior-front-end-developer-at-pt-digital-voucher-market-bersama-4447310342 |
+| 2026-08-18 | TOG Indonesia | Python Developer | Jakarta | 66% | To Apply | https://id.linkedin.com/jobs/view/python-developer-at-tog-indonesia-4444659844 |
+| 2026-08-18 | PT SumatraSarana Sekar Sakti | Junior Golang Backend Dev (Medan) | Medan | 55% | Found | https://id.linkedin.com/jobs/view/junior-golang-backend-developer-medan-sep-26-at-pt-sumatrasarana-sekar-sakti-s4-group-4453286543 |
+| 2026-08-18 | HTC Global Services | Junior Back End (Spring Boot, Banking) | South Jakarta | 58% | Found | https://id.linkedin.com/jobs/view/junior-back-end-developer-springboot-banking-at-htc-global-services-4446486787 |
+| 2026-08-18 | CARE TECHNOLOGIES | IT Programmer | Jakarta | 60% | Found | https://id.linkedin.com/jobs/view/it-programmer-at-care-technologies-4442168754 |
+
+> Source: LinkedIn guest search (Indonesia), scraped 2026-08-18, all URLs returned HTTP 200 (verified active).
+> Work type (WFO/Hybrid/Remote) & salary not in LinkedIn guest DOM — verify on the post before applying.
+> Match % = junior-friendliness + stack overlap with your proven skills.
 
 ### Status values
 - Found — discovered, not yet reviewed
